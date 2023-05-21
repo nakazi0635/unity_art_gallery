@@ -10,12 +10,11 @@ Material:
   m_Name: Planks
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
-  - _EMISSION
   - _METALLICGLOSSMAP
   - _NORMALMAP
   - _PARALLAXMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -42,11 +41,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 10, y: 20}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 1d5b21d07413d8f4f8b54302e0dc545b, type: 3}
-        m_Scale: {x: 10, y: 20}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: 7fed49ec704c7ae489e477e9e6dde3aa, type: 3}
@@ -62,9 +61,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BumpScale: 2
+    - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DetailNormalMapScale: 0
+    - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -72,7 +71,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.034
+    - _Parallax: 0.0135
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -80,5 +79,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.33962262, g: 0.2791311, b: 0.25471696, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

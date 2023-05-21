@@ -20,7 +20,7 @@ public class Skinned : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 center = skinnedMeshRenderer.bounds.center;
-        Vector3 offset = skinnedMeshRenderer.transform.up * offsetDistance; // 手前に移動するオフセットベクトル
+        Vector3 offset = skinnedMeshRenderer.transform.forward * offsetDistance; // 手前に移動するオフセットベクトル
         targetTransform.position = center + offset;
     }
 }
