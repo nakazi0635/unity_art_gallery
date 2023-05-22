@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class Skinned : MonoBehaviour
 {
-    public GameObject skinnedMeshObject;
-    public GameObject targetObject;
+    public GameObject[] skinnedMeshObjects;
+    public GameObject[] targetObjects;
     public float offsetDistance = 0.1f; // 手前に配置する距離
 
-    private SkinnedMeshRenderer skinnedMeshRenderer;
-    private Transform targetTransform;
+    private SkinnedMeshRenderer[] skinnedMeshRenderers;
+    private Transform[] targetTransforms;
 
     private void Start()
     {
-        skinnedMeshRenderer = skinnedMeshObject.GetComponent<SkinnedMeshRenderer>();
-        targetTransform = targetObject.transform;
+        skinnedMeshRenderers = new SkinnedMeshRenderer[skinnedMeshObjects.Length];
+        targetTransforms = new Transform[targetObjects.Length];
+
+        for (int i = 0; i < skinnedMeshObjects.Length; i++)
+        {
+            skinnedMeshRenderers[i] = skinnedMeshObjects[i].GetComponent<SkinnedMeshRenderer>();
+        }
+
+        for (int i = 0; i < targetObjects.Length; i++)
+        {
+            targetTransforms[i] = targetObjects[i].transform;
+        }
     }
 
     private void LateUpdate()
     {
-        Vector3 center = skinnedMeshRenderer.bounds.center;
-        Vector3 offset = skinnedMeshRenderer.transform.forward * offsetDistance; // 手前に移動するオフセットベクトル
-        targetTransform.position = center + offset;
+        for (int i = 0; i < skinnedMeshRenderers.Length; i++)
+        {
+            Vector3 center = skinnedMeshRenderers[i].bounds.center;
+            Vector3 offset = skinnedMeshRenderers[i].transform.forward * offsetDistance; // 手前に移動するオフセットベクトル
+            targetTransforms[i].position = center + offset;
+        }
     }
 }
