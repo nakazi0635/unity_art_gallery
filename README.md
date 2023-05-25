@@ -6,7 +6,8 @@ I used this to create "Kirby".
 
 # DEMO
 
-![Qiita](https://i.imgur.com/kEH021j.png "Qiita")
+![2023-05-24_214946](https://github.com/nakazi0635/unity_art_gallery/assets/91645661/75aa6d19-77cb-415c-80da-dc1089f13ca3)
+
 
 It may look like an alarm clock, but it is "Kirby".(^^)
 
