@@ -6,8 +6,6 @@ I created an art gallery to practice lighting and cross components.
 ![2023-05-24_214946](https://github.com/nakazi0635/unity_art_gallery/assets/91645661/75aa6d19-77cb-415c-80da-dc1089f13ca3)
 
 
-It may look like an alarm clock, but it is "Kirby".(^^)
-
 # Features
 I created the following memorial exhibition as a reference. ↓↓↓
 
@@ -47,7 +45,7 @@ Linux environment has not been tested.
 
 * Nacazy
 
-You can also create an art gallery without a split.
+You can also create an art gallery without a C#script.
 Please try to create it.
 
 Thank you very much!
