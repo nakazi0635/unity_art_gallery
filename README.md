@@ -1,8 +1,5 @@
 # unity_art_gallery
-ANSI escape sequences can be used to
-You can color the output of the terminal and rewrite the output.
-
-I used this to create "Kirby".
+I created an art gallery to practice lighting and cross components.
 
 # DEMO
 
@@ -12,46 +9,45 @@ I used this to create "Kirby".
 It may look like an alarm clock, but it is "Kirby".(^^)
 
 # Features
+I created the following memorial exhibition as a reference. ↓↓↓
 
-You can do this only by writing escape sequences. For example, by writing like this, you can represent the pink part of the skin.
+https://www.kawashimaselkon.co.jp/stories/case-study/1473/
 
-```ruby
-print "\033[48;5;",225.to_s, "m","  \033[0m"
-```
-We just wrote the escape sequence one pixel at a time according to the way the escape sequence is written.
+Cloth component to reproduce curtain-like swaying.
 
-# Requirement
+Also, the picture frames placed on the curtains move with the movement of the curtains.
 
-* Ruby 2.6.8
+# Requirements.
 
-# Installation
-
-No libraries used
+* Unity 2021.3.23f1
 
 # Usage
 
-Copy and paste "Draw_24bit.rb".
+* Play 
 
-Please create ruby code named "Draw_24bit.rb".
+This is published to UnityPlay. ↓↓↓
 
-Run "Draw_24bit.rb"
+https://play.unity.com/mg/other/webgl-builds-348170
 
-```bash
-ruby Draw_24bit.rb
-```
+* Remix
 
-# Note
+Please clone the repository here
 
-I don't test environments under Linux and Windows.
+Install UnityHub and install Unity 2021.3.23f1. 
 
-# Author
+Install Windows Build Support and Mac Build Support additionally at that time.
 
-* Nakazi
+Open the project folder from Open in UnityHub.
 
-# License
+# Caution.
 
-"ANSI escape sequences" is under [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code#External_links).
+Linux environment has not been tested.
 
-Let's display the dots on the terminal!
+# Author.
 
-Thank you!
+* Nacazy
+
+You can also create an art gallery without a split.
+Please try to create it.
+
+Thank you very much!
