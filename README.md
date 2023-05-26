@@ -3,7 +3,7 @@ I created an art gallery to practice lighting and cross components.
 
 # DEMO
 
-![2023-05-24_214946](https://github.com/nakazi0635/unity_art_gallery/assets/91645661/75aa6d19-77cb-415c-80da-dc1089f13ca3)
+![2023-05-24_214946](https://github.com/nakazi0635/unity_art_gallery/assets/91645661/ace0a905-e99c-4e0d-a148-9126905165bf)
 
 
 # Features
