@@ -2,44 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// WASDキーで移動しQEキーで回転するプレイヤークラス
 public class PlayerScript : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed;
+    float moveSpeed = 0.005f; // 移動速度変数
     [SerializeField]
-    private float rotateSpeed;
-    // Start is called before the first frame update
-    void Start()
-    {
+    float rotateSpeed = 0.5f; // 回転速度変数
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)) // Wキーが押されたら
         {
-            transform.position += transform.forward * moveSpeed;
+            transform.position += transform.forward * moveSpeed; // z軸位置を加算
         }
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q)) // Qキーが押されたら
         {
-            transform.Rotate(0, -1 * rotateSpeed, 0);
+            transform.Rotate(0, -1 * rotateSpeed, 0); // y軸に回転(右回転)
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S)) // Sキーが押されたら
         {
-            transform.position += transform.forward * -1 * moveSpeed;
+            transform.position -= transform.forward * moveSpeed; // z軸位置を減算
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E)) // Eキーが押されたら
         {
-            transform.Rotate(0, 1 * rotateSpeed, 0);
+            transform.Rotate(0, 1 * rotateSpeed, 0); // y軸に回転(左回転)
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)) // Aキーが押されたら
         {
-            transform.position -= transform.right * moveSpeed;
+            transform.position -= transform.right * moveSpeed; // x軸位置を減算
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)) // Dキーが押されたら
         {
-            transform.position += transform.right * moveSpeed;
+            transform.position += transform.right * moveSpeed; // x軸位置を加算
         }
     }
 }
